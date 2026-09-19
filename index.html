@@ -81,17 +81,10 @@
   nav ul{list-style:none; display:flex; gap:30px; font-family:'Inter', sans-serif; font-size:0.85rem; font-weight:500;}
   nav a{text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:border-color .2s;}
   nav a:hover, nav a:focus-visible{border-color:var(--sandstone); outline:none;}
-  .nav-cta{
-    font-family:'Inter', sans-serif; font-size:0.8rem; font-weight:600;
-    border:1px solid var(--ink); padding:8px 16px; border-radius:2px;
-    text-decoration:none; white-space:nowrap;
-  }
-  .nav-cta:hover{background:var(--ink); color:var(--paper);}
   .nav-toggle{display:none;}
 
   @media (max-width:760px){
     nav ul{display:none;}
-    .nav-cta{display:none;}
   }
 
   /* ---------- hero (course 1) ---------- */
@@ -197,30 +190,7 @@
   .event-card p{font-size:0.92rem; color:rgba(250,246,238,0.7);}
   @media (max-width:760px){ .event-list{grid-template-columns:1fr;} }
 
-  /* ---------- membership (course 5) ---------- */
-  .membership{
-    padding:80px 0; background:var(--paper);
-    text-align:center;
-  }
-  .membership h2{font-size:2rem; max-width:620px; margin:14px auto 16px;}
-  .membership p{max-width:560px; margin:0 auto 30px; color:#4a423b;}
-  .member-panel{
-    margin-top:44px;
-    border:1px solid var(--line);
-    background:var(--mortar);
-    border-radius:2px;
-    padding:34px 28px;
-    max-width:640px;
-    margin-left:auto; margin-right:auto;
-    text-align:left;
-    display:flex; gap:22px; align-items:flex-start;
-  }
-  .member-panel .quarry-mark{color:var(--superior); background:var(--paper);}
-  .member-panel h3{font-size:1.1rem; margin-bottom:6px;}
-  .member-panel p{color:#4a423b; font-size:0.94rem; margin-bottom:14px;}
-  .member-panel .link-arrow{color:var(--superior); border-color:var(--superior);}
-
-  /* ---------- visit / footer (course 6) ---------- */
+  /* ---------- visit / footer (course 5) ---------- */
   footer{background:var(--sandstone-dark); color:var(--mortar); padding:64px 0 28px;}
   .footer-grid{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; margin-bottom:48px;}
   footer h3{font-family:'Fraunces', serif; color:var(--paper); font-size:1.1rem; margin-bottom:14px; font-weight:600;}
@@ -256,11 +226,9 @@
       <ul>
         <li><a href="#history">History</a></li>
         <li><a href="#events">Events</a></li>
-        <li><a href="#membership">Membership</a></li>
         <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
-    <a href="#login" class="nav-cta">Member Login</a>
   </div>
 </header>
 
@@ -288,7 +256,7 @@
       <p class="eyebrow">Welcome</p>
       <h2>A small town, a lasting community</h2>
       <p class="lede">"Founded in 1885 on the strength of red sandstone, Jacobsville's story is still being written by the people who remember it."</p>
-      <p>Jacobsville was platted by John Henry Jacobs as a quarrying and fishing village on Lake Superior's Portage River. For decades, its sandstone shaped buildings across the Copper Country and beyond. Today, our Heritage Center gathers the photographs, records, and memories of that community — and gives our 45 members a place to keep them alive for the next generation.</p>
+      <p>Jacobsville was platted by John Henry Jacobs as a quarrying and fishing village on Lake Superior's Portage River. For decades, its sandstone shaped buildings across the Copper Country and beyond. Today, our Heritage Center gathers the photographs, records, and memories of that community — and gives the community a place to keep them alive for the next generation.</p>
       <a href="#history" class="link-arrow">Read the full history &rarr;</a>
     </div>
   </div>
@@ -303,7 +271,7 @@
       <p>Explore the timeline of Jacobsville — from its founding and the boom years of the sandstone trade, through the churches and general stores that anchored daily life, to the community effort that preserves it today.</p>
       <div class="timeline-chip"><span class="dot"></span>1885 &middot; Town platted by John Henry Jacobs</div><br><div class="timeline-chip"><span class="dot"></span>1931 &middot; Cornerstone laid, built by Frank Kuusisto</div><br>
       <div class="timeline-chip"><span class="dot"></span>1900 &middot; Population reaches 800</div><br>
-      <div class="timeline-chip"><span class="dot"></span>Today &middot; 45 members carry the story forward</div>
+      <div class="timeline-chip"><span class="dot"></span>Today &middot; The community carries the story forward</div>
       <br><a href="#history-full" class="link-arrow">Visit the History page &rarr;</a>
     </div>
   </div>
@@ -326,30 +294,14 @@
       </div>
       <div class="event-card">
         <div class="event-date">Thu, Oct 8</div>
-        <h3>Members' Potluck &amp; Story Night</h3>
-        <p>Bring a dish and a memory — an evening of shared stories for members and guests.</p>
+        <h3>Community Potluck &amp; Story Night</h3>
+        <p>Bring a dish and a memory — an evening of shared stories for neighbors and guests.</p>
       </div>
       <div class="event-card">
         <div class="event-date">Sat, Nov 15</div>
         <h3>Annual Meeting</h3>
-        <p>Yearly gathering to review the Center's work and welcome new members.</p>
+        <p>Yearly gathering to review the Center's work and plan the year ahead.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="membership" id="membership">
-  <p class="eyebrow">Get Involved</p>
-  <h2>Membership keeps this history standing</h2>
-  <p>Members support the upkeep of the Center and its archive, and receive access to community records, the member directory, and Center bylaws.</p>
-  <a href="#join" class="btn btn-primary">Become a Member</a>
-
-  <div class="member-panel" id="login">
-    <div class="quarry-mark">&#128274;</div>
-    <div>
-      <h3>Already a member?</h3>
-      <p>Log in to view the member directory, community center bylaws, and shared documents. (Member login is coming soon — this area is reserved for the next phase of the site.)</p>
-      <a href="#" class="link-arrow">Member Login &rarr;</a>
     </div>
   </div>
 </section>
@@ -373,9 +325,7 @@
         <ul>
           <li><a href="#history">History</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#membership">Membership</a></li>
-          <li><a href="#login">Member Login</a></li>
-        </ul>
+          </ul>
       </div>
     </div>
     <div class="footer-bottom">
